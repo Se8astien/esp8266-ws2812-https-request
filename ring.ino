@@ -116,8 +116,8 @@ void loop() {
  
    // count led to show
    int percent = root["datas"]["percent"];
-   double nbled = (double)percent / (double)100;
-   nbled = (int)(nbled * 16) ;
+   double nbledd = (double)percent *(double)16 / (double)100;
+   int nbled = (int)(nbledd * 16) ;
 
    if(nbled != 0 && nbled < 16 ){
       for(int i = 16; i >= 16-nbled; i-- ) { // show led
